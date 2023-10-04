@@ -1,0 +1,93 @@
+
+@font-face {
+    font-family: Inclusive;
+    src: url(font/InclusiveSans-Regular.ttf);
+}
+
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado {
+    opacity: 1;
+}
+
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a {
+    opacity: 0.2;
+    transition: ease-in-out 0.3s;
+}
+
+/* Edição de fundo */
+
+body{
+    background: rgb(187,243,240);
+background: radial-gradient(circle, rgba(187,243,240,1) 0%, rgba(147,241,248,1) 25%, rgba(120,215,251,1) 77%, rgba(56,172,236,1) 100%);
+}
+
+/* Edição de textos */
+h1, h2, p, #versus, #mensagem{
+    font-family: Inclusive;
+}
+
+h1{
+    text-align: center;
+}
+
+/* Edição das bolinhas sumisse */
+ul, li{
+    color: rgba(74, 198, 212, 0)
+}
+
+/* Colocar as imagens no centro de cada lado */
+
+#jogadorEscolha li,
+        #computadorEscolha li {
+            display: inline-block;
+            margin-right: 10px; /* Espaçamento entre as opções (ajuste conforme necessário) */
+        }
+
+
+
+        #versus{
+            text-align: center;
+            margin-top: -100px;
+        }
+        #computadorPontos, #jogadorPontos {
+            text-align: center;
+            font-family: Inclusive;
+        }
+       
+
+        #computador{
+            margin-left: 870px;
+            margin-top: -130px;
+            width: 370px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgb(94, 179, 179);
+            background-color: white;
+        }
+        #computadorNome{
+            margin-left: 120px;
+        }
+
+        #jogador{
+            margin-left: 220px;
+            margin-top: 180px;
+            width: 370px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgb(94, 179, 179);
+            background-color: white;
+        }
+
+        #jogadorNome{
+            margin-left: 148px;
+            
+        }
+
+        #mensagem{
+            text-align: center;
+            font-family: Inclusive;
+            margin-top: 30px;
+            font-size: 23px;
+        }
